@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@using PrimeFitness.Models.Entities
+@model List<NguoiDung>
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800 pt-4">Users</h1>
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header ">
+        <strong><a href="/Admin/User/Create">Thêm người dùng</a></strong>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Họ Tên</th>
+                        <th>Sửa</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (NguoiDung item in Model)
+                    {
+                        <tr>
+                            <td>@item.UserName</td>
+                            <td>@item.Password</td>
+                            <td>@item.HoTen</td>
+                            <td><a href="/Admin/User/Edit/@item.UserName" class="text-decoration-none">Sửa</a></td>
+                            <td><a href="/Admin/User/Delete/@item.UserName" class="text-decoration-none">Xóa</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

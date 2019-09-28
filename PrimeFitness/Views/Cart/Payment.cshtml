@@ -1,0 +1,174 @@
+﻿@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using PrimeFitness.Models.Entities;
+@model List<CartItem>
+
+<section class=" register-now">
+    <div class="row">
+        <div class="col-8 ">
+            <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
+            <div class="text-white register-now-detail">
+                Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
+            </div>
+        </div>
+        <div class="col-4 btn-register-now">
+            <button class="btn btn-danger " type="button" data-toggle="modal"
+                    data-target="#register-modal">
+                <div>ĐĂNG KÝ NGAY</div>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h3 class="text-center pt-5 pb-3 font-weight-bold text-danger">GIỎ HÀNG</h3>
+                </div>
+                <div class="pb-5">
+                    @if (Model.Count > 0)
+                    {
+                        <table class="table table-bordered cart-table">
+                            <thead>
+                                <tr class="btn-secondary text-center">
+                                    <td>Ảnh</td>
+                                    <td>Tên</td>
+                                    <td>Giá</td>
+                                    <td>Số Lượng</td>
+                                    <td>Thành tiền</td>
+                                    <td>Cập nhật</td>
+                                    <td>Xóa</td>
+                                </tr>
+                            </thead>
+                            <tbody id="list-cart">
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td><img src="/Content/img/@item.Goitap.UrlAnh" width="150" /></td>
+                                        <td>@item.Goitap.TenGT</td>
+                                        @using (Html.BeginForm("UpdateCart", "Cart", new { @id = item.Goitap.MaGT.ToString().Trim() }, FormMethod.Post, new { role = "form" }))
+                                        {
+
+                                            <td class="text-center">
+                                                <input type="text" name="txtQuantity" value="@item.Quantity" class="form-control" />
+                                            </td>
+                                            <td class="text-center">@item.Goitap.GiaGT.GetValueOrDefault(0).ToString("N0")</td>
+                                            <td class="text-center">@((item.Goitap.GiaGT.GetValueOrDefault(0) * item.Quantity).ToString("N0"))</td>
+                                            <td>
+                                                <input type="submit" value="Cập nhật" class="btn btn-link" />
+                                            </td>
+
+                                        }
+                                        <td><a href="/Cart/RemoveLine/@item.Goitap.MaGT" data-id="@item.Goitap.MaGT" class="btn btn-link">Xóa</a></td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <span class="alert alert-danger col-12 text-center">Chưa có sản phẩm nào trong giỏ hàng</span>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+        @using (Html.BeginForm("Payment", "Cart", FormMethod.Post))
+        {
+            <div class="row">
+
+                <div class="col-4">
+                    <div class="pay text-center font-weight-bold text-light">THÔNG TIN KHÁCH HÀNG</div>
+
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-4">
+                                <label>Họ và tên</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-4">
+                                <label>Số điện thoại</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="phone">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="pay text-center font-weight-bold text-light">HÌNH THỨC THANH TOÁN</div>
+                    <form class="pt-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="exampleRadios1"
+                                   value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Thanh toán khi nhận thẻ
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="exampleRadios2"
+                                   value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Thanh toán trực tuyến qua Paypal
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-6 bg-primary cart-action text-center font-weight-bold">
+                            <a href="">TẢI FILE EXCEL</a>
+                        </div>
+                        <div class="col-6 bg-primary cart-action text-center font-weight-bold">
+                            <a href="">IN BÁO GIÁ</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center cart-action bg-warning font-weight-bold col-12">
+                            <a href="/package/">CHỌN THÊM GÓI TẬP</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center cart-action bg-danger font-weight-bold col-12">
+                            <button type="submit" class="btn btn-danger">GỬI ĐƠN HÀNG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+<section class=" register-now">
+    <div class="row">
+        <div class="col-8 ">
+            <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
+            <div class="text-white register-now-detail">
+                Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
+            </div>
+        </div>
+        <div class="col-4 btn-register-now">
+            <button class="btn btn-danger " type="button" data-toggle="modal"
+                    data-target="#register-modal">
+                <div>ĐĂNG KÝ NGAY</div>
+            </button>
+        </div>
+    </div>
+</section>
+
+

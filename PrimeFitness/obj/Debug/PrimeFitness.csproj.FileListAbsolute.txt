@@ -1,0 +1,64 @@
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\PrimeFitness.dll.config
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\PrimeFitness.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\PrimeFitness.pdb
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\Microsoft.Web.Infrastructure.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\Newtonsoft.Json.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Net.Http.Formatting.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Helpers.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Http.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Http.WebHost.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Mvc.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Razor.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.Deployment.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.Razor.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\Newtonsoft.Json.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Net.Http.Formatting.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Helpers.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Http.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Http.WebHost.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Mvc.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.Razor.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.Deployment.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.Razor.xml
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\obj\Debug\PrimeFitness.csprojResolveAssemblyReference.cache
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\obj\Debug\PrimeFitness.dll
+c:\users\believe\documents\visual studio 2013\Projects\PrimeFitness\PrimeFitness\obj\Debug\PrimeFitness.pdb
+C:\Users\Believe\Documents\Visual Studio 2013\Projects\PrimeFitness\PrimeFitness\bin\EntityFramework.dll
+C:\Users\Believe\Documents\Visual Studio 2013\Projects\PrimeFitness\PrimeFitness\bin\EntityFramework.SqlServer.dll
+C:\Users\Believe\Documents\Visual Studio 2013\Projects\PrimeFitness\PrimeFitness\bin\EntityFramework.xml
+C:\Users\Believe\Documents\Visual Studio 2013\Projects\PrimeFitness\PrimeFitness\bin\EntityFramework.SqlServer.xml
+D:\PrimeFitness\PrimeFitness\bin\PrimeFitness.dll.config
+D:\PrimeFitness\PrimeFitness\bin\PrimeFitness.dll
+D:\PrimeFitness\PrimeFitness\bin\PrimeFitness.pdb
+D:\PrimeFitness\PrimeFitness\bin\EntityFramework.dll
+D:\PrimeFitness\PrimeFitness\bin\EntityFramework.SqlServer.dll
+D:\PrimeFitness\PrimeFitness\bin\Microsoft.Web.Infrastructure.dll
+D:\PrimeFitness\PrimeFitness\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\PrimeFitness\PrimeFitness\bin\Newtonsoft.Json.dll
+D:\PrimeFitness\PrimeFitness\bin\System.Net.Http.Formatting.dll
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Helpers.dll
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Http.dll
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Http.WebHost.dll
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Mvc.dll
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Razor.dll
+D:\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.Deployment.dll
+D:\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.dll
+D:\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.Razor.dll
+D:\PrimeFitness\PrimeFitness\bin\EntityFramework.xml
+D:\PrimeFitness\PrimeFitness\bin\EntityFramework.SqlServer.xml
+D:\PrimeFitness\PrimeFitness\bin\Newtonsoft.Json.xml
+D:\PrimeFitness\PrimeFitness\bin\System.Net.Http.Formatting.xml
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Helpers.xml
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Http.xml
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Http.WebHost.xml
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Mvc.xml
+D:\PrimeFitness\PrimeFitness\bin\System.Web.Razor.xml
+D:\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.xml
+D:\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.Deployment.xml
+D:\PrimeFitness\PrimeFitness\bin\System.Web.WebPages.Razor.xml
+D:\PrimeFitness\PrimeFitness\obj\Debug\PrimeFitness.dll
+D:\PrimeFitness\PrimeFitness\obj\Debug\PrimeFitness.pdb
+D:\PrimeFitness\PrimeFitness\obj\Debug\PrimeFitness.csprojResolveAssemblyReference.cache
